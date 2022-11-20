@@ -1,11 +1,16 @@
 import '../styles/globals.css'
+import { useState } from "react";
+import ContentProvider from '../context/AppContext'
 import Layout from '../components/layout'
 
 function MyApp({ Component, pageProps }) {
+  const [contenu, setContenu] = useState()
   return (
-    <Layout>
-        <Component {...pageProps} />
-    </Layout>
+    <ContentProvider>
+      <Layout>
+          <Component {...pageProps} />
+      </Layout>
+    </ContentProvider>
   )
 }
 

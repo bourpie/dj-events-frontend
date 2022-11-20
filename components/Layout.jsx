@@ -3,12 +3,12 @@ import Footer from './Footer'
 
 function Layout({children}) {
   return (
-    <div className='flex flex-col h-screen'>
+    <div className='flex flex-col h-full'>
         <Header />
         <main className='mb-auto py-10'>
-            <div className="container">
+
              {children}
-            </div>
+
         </main>
         <Footer />
     </div>

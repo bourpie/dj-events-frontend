@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-function AboutPage() {
+function ContactPage() {
   return (
 
     <article>
@@ -19,4 +19,4 @@ function AboutPage() {
   )
 }
 
-export default AboutPage
+export default ContactPage
